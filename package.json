@@ -1,0 +1,17 @@
+{
+  "name": "speed-comparison-sqlite-drivers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "best-sqlite3": "^1.0.12",
+    "better-sqlite3": "^7.1.2",
+    "sqlite3": "^5.0.1"
+  }
+}
