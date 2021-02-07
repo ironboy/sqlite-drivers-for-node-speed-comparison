@@ -1,7 +1,7 @@
 const fs = require('fs');
 const now = require('./now');
 const format = require('./format');
-const dbName = './db-sqlite3.sqlite3';
+const dbName = global.dbNames.sqlite3;
 
 module.exports = async () => {
 

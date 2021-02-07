@@ -1,9 +1,10 @@
 const fs = require('fs');
 const now = require('./now');
 const format = require('./format');
-const dbName = './db-better-sqlite3.sqlite3';
+const dbName = global.dbNames.betterSqlite3;
 
-(async () => {
+
+module.exports = async () => {
 
   console.log('\n\nbetter-sqlite3');
   console.log('------------------')
@@ -64,8 +65,7 @@ const dbName = './db-better-sqlite3.sqlite3';
   }
   console.log('DELETES', format(now('milli') - start));
 
-
-})().catch(e => console.log(e));
+};
 
 function adaptor(db) {
   return {

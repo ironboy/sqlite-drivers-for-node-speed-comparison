@@ -1,9 +1,10 @@
 const fs = require('fs');
 const now = require('./now');
 const format = require('./format');
-const dbName = './db-best-sqlite.sqlite3';
+const dbName = global.dbNames.bestSqlite3;
 
-(async () => {
+
+module.exports = async () => {
 
   console.log('\n\nbest-sqlite3');
   console.log('------------------')
@@ -66,4 +67,4 @@ const dbName = './db-best-sqlite.sqlite3';
   console.log('DELETES', format(now('milli') - start));
 
 
-})().catch(e => console.log(e));
+};
