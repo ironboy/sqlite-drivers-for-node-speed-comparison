@@ -13,6 +13,7 @@ async function runTests() {
   await t();
   t = require('./test-best-sqlite3');
   await t();
+  console.log('\n');
   process.exit();
 }
 runTests().catch(e => console.error(e));
